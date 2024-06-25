@@ -5,21 +5,15 @@ local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
 lspconfig.tsserver.setup {}
 lspconfig.prismals.setup {}
-lspconfig.cssls.setup {
-    capabilities = capabilities
-}
+lspconfig.lua_ls.setup {settings = {Lua = {diagnostics = {globals = {'vim'}}}}}
+lspconfig.cssls.setup {capabilities = capabilities}
 lspconfig.golangci_lint_ls.setup {}
 lspconfig.rust_analyzer.setup {
-  settings = {
-    ['rust-analyzer'] = {
-            diagnostics = {
-                enable = true,
-                experimental = {
-                    enable = true,
-                },
-            },
-    },
-  },
+    settings = {
+        ['rust-analyzer'] = {
+            diagnostics = {enable = true, experimental = {enable = true}}
+        }
+    }
 }
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

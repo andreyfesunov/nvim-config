@@ -10,9 +10,13 @@ wk.register({
     },
     e = {"File Manager"},
     o = {"Git status"},
-    x = {"Close Buffer"},
+    b = {
+        name = "Buffer",
+        x = "Close buffer",
+        X = "Close Right Buffer",
+        s = "Sort"
+    },
     w = {"Save"},
-    t = {name = "Terminal", f = {"Float terminal"}, h = {"Horizontal terminal"}},
     h = {"No highlight"},
     g = {name = "Git", b = "Branches", c = "Commits", s = "Status"},
     c = {name = "Comment", l = "Comment Line"},

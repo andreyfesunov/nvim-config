@@ -13,18 +13,20 @@ require("lazy").setup({
         'nvim-telescope/telescope.nvim',
         tag = '0.1.8',
         dependencies = {'nvim-lua/plenary.nvim'}
-    }, {'cooperuser/glowbeam.nvim'}, {'joshdick/onedark.vim'},
-    {'rebelot/kanagawa.nvim'}, {'nvim-treesitter/nvim-treesitter'},
+    }, {'nvim-treesitter/nvim-treesitter'},
+    {"williamboman/mason.nvim", build = ":MasonUpdate"}, -- Themes
+    {'cooperuser/glowbeam.nvim'}, {'joshdick/onedark.vim'},
+    {'rebelot/kanagawa.nvim'}, {'nvim-tree/nvim-web-devicons'},
+    -- LSP & Autocomplete
     {'neovim/nvim-lspconfig'}, {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'},
     {'hrsh7th/cmp-path'}, {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'},
+    -- Others
     {'lewis6991/gitsigns.nvim'}, {
         'nvim-lualine/lualine.nvim',
         dependencies = {
             'nvim-tree/nvim-web-devicons', 'linrongbin16/lsp-progress.nvim'
         }
-    }, {'nvim-tree/nvim-web-devicons'},
-    {"williamboman/mason.nvim", build = ":MasonUpdate"},
-    {'jose-elias-alvarez/null-ls.nvim'}, {'windwp/nvim-autopairs'},
+    }, {'jose-elias-alvarez/null-ls.nvim'}, {'windwp/nvim-autopairs'},
     {'Djancyp/outline'}, {'terrortylor/nvim-comment'},
     {'windwp/nvim-ts-autotag'}, {
         "nvim-neo-tree/neo-tree.nvim",
