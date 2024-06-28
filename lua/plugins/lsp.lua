@@ -1,12 +1,21 @@
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
--- Sntup language servers.
+
+local omnisharp_bin = "/usr/local/bin/omnisharp-roslyn/OmniSharp"
+local pid = vim.fn.getpid()
+
+-- Setup language servers.
 local lspconfig = require("lspconfig")
+lspconfig.html.setup({ capabilities = capabilities })
+lspconfig.cssls.setup({ capabilities = capabilities })
 lspconfig.pyright.setup({})
 lspconfig.tsserver.setup({})
+lspconfig.angularls.setup({})
 lspconfig.prismals.setup({})
+lspconfig.omnisharp.setup({
+	cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
+})
 lspconfig.lua_ls.setup({ settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
-lspconfig.cssls.setup({ capabilities = capabilities })
 lspconfig.golangci_lint_ls.setup({})
 lspconfig.rust_analyzer.setup({
 	settings = {

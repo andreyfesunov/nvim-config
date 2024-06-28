@@ -18,17 +18,20 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	{ "nvim-treesitter/nvim-treesitter" },
-	{ "williamboman/mason.nvim", build = ":MasonUpdate" }, -- Themes
+	{ "williamboman/mason.nvim", build = ":MasonUpdate" },
+	-- Themes
 	{ "cooperuser/glowbeam.nvim" },
 	{ "joshdick/onedark.vim" },
 	{ "rebelot/kanagawa.nvim" },
-	{ "nvim-tree/nvim-web-devicons" }, -- LSP & Autocomplete
+	{ "nvim-tree/nvim-web-devicons" },
+	-- LSP & Autocomplete
 	{ "neovim/nvim-lspconfig" },
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/cmp-buffer" },
 	{ "hrsh7th/cmp-path" },
 	{ "hrsh7th/cmp-cmdline" },
-	{ "hrsh7th/nvim-cmp" }, -- Others
+	{ "hrsh7th/nvim-cmp" },
+	-- Others
 	{ "lewis6991/gitsigns.nvim" },
 	{
 		"nvim-lualine/lualine.nvim",

@@ -30,3 +30,8 @@ wk.register({
 		s = "Symbol",
 	},
 }, { prefix = "<leader>" })
+
+wk.register({
+	d = { "Go to Definition" },
+	r = { "Go to References" },
+}, { prefix = "g" })
