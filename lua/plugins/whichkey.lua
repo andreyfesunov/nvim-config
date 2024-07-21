@@ -18,7 +18,7 @@ wk.register({
 	},
 	w = { "Save" },
 	h = { "No highlight" },
-	g = { name = "Git", b = "Branches", c = "Commits", s = "Status" },
+	g = { name = "Git", b = "Branches", c = "Commits", s = "Status", d = "Diff" },
 	c = { name = "Comment", l = "Comment Line" },
 	l = {
 		name = "LSP",
