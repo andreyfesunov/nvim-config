@@ -28,6 +28,7 @@ wk.register({
 		r = "Rename",
 		a = "Action",
 		s = "Symbol",
+        h = "Highlight"
 	},
 }, { prefix = "<leader>" })
 
