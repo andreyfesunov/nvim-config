@@ -60,7 +60,7 @@ return {
             require('mason').setup({})
             require('mason-lspconfig').setup({
                 ensure_installed = {
-                    'tsserver',
+                    -- 'tsserver',
                 },
                 handlers = {
                     function(server)
@@ -68,6 +68,7 @@ return {
                             capabilities = lsp_capabilities,
                         })
                     end,
+                    --[[
                     ['tsserver'] = function()
                         lspconfig.tsserver.setup({
                             capabilities = lsp_capabilities,
@@ -78,6 +79,7 @@ return {
                             }
                         })
                     end
+                    --]]
                 }
             })
         end
