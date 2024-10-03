@@ -19,3 +19,8 @@ vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv", { desc = "Move block up" })
 -- Other
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save" })
 vim.keymap.set("i", "jj", "<Esc>", { desc = "Go to normal mode" })
+
+-- Copy to system clipboard
+vim.keymap.set("n", "<leader>y", "\"+y", { desc = "Yank selected to system clipboard" })
+vim.keymap.set("v", "<leader>y", "\"+y", { desc = "Yank selected to system clipboard "})
+vim.keymap.set("n", "<leader>Y", "\"+Y", { desc = "Yand line to system clipboard" })
