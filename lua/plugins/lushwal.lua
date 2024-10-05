@@ -5,5 +5,6 @@ return {
         { "rktjmp/lush.nvim" },
         { "rktjmp/shipwright.nvim" },
     },
-    config = true
+    config = true,
+    enabled = jit.os == "Linux"
 }
