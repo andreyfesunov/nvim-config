@@ -46,7 +46,7 @@ return {
                     bufmap('n', '<leader>lr', '<cmd>lua vim.lsp.buf.references()<cr>', "Go to References")
                     bufmap('n', '<leader>ls', '<cmd>lua vim.lsp.buf.signature_help()<cr>', "Signature Help")
                     bufmap('n', '<leader>lR', '<cmd>lua vim.lsp.buf.rename()<cr>', "Rename")
-                    bufmap({ 'n', 'x' }, '<leader>lf', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', "Format")
+                    -- bufmap({ 'n', 'x' }, '<leader>lf', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', "Format")
                     bufmap('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<cr>', "LSP Action")
                     -- bufmap('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
                     -- bufmap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
