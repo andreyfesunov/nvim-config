@@ -15,6 +15,7 @@ return {
             typescriptreact = common_setup,
             svelte = common_setup,
             python = { "pylint" },
+            php = { "phpstan", "phpcs" }
         }
 
         local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
