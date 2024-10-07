@@ -3,6 +3,7 @@
   "blamer.nvim": { "branch": "main", "commit": "49201f93aa7124dd8b1fa35ea5e2b781c782c6f5" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "39e2eda76828d88b773cc27a3f61d2ad782c922d" },
   "conform.nvim": { "branch": "master", "commit": "40d4e98fcc3e6f485f0e8924c63734bc7e305967" },
+  "coredor.nvim": { "branch": "main", "commit": "42b6c7e30327e52b9494d3c5caf64f006b8b74ab" },
   "harpoon": { "branch": "harpoon2", "commit": "0378a6c428a0bed6a2781d459d7943843f374bce" },
   "image.nvim": { "branch": "master", "commit": "c4e826027e0428e3a5d7a95700be7a3ce49c2587" },
   "lazy.nvim": { "branch": "main", "commit": "460e1cd8f24e364d54543a4b0e83f6f4ec1f65fb" },
