@@ -20,7 +20,7 @@ return {
 				typescript = common_setup,
 			},
 			format_on_save = {
-				timeout_ms = 500,
+				timeout_ms = 2500,
 				async = false,
 				lsp_format = "fallback",
 			},
