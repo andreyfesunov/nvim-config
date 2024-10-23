@@ -4,7 +4,7 @@ return {
     dependencies = { 'neovim/nvim-lspconfig', 'nvim-telescope/telescope.nvim', 'mfussenegger/nvim-dap-python' },
     config = function()
         require('venv-selector').setup {
-            pipenv_path = '/home/afesunov/.local/share/virtualenvs',
+            stay_on_this_version = true
             -- Your options go here
             -- name = "venv",
             -- auto_refresh = false
