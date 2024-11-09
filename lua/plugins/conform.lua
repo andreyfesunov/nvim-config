@@ -3,7 +3,7 @@ return {
     opts = {},
     config = function()
         local conform = require("conform")
-        local common_setup = { "prettierd", "prettier", stop_after_first = true }
+        local common_setup = { "prettier", stop_after_first = true }
 
         conform.setup({
             formatters_by_ft = {
