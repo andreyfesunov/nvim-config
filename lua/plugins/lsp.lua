@@ -80,18 +80,7 @@ return {
 							capabilities = lsp_capabilities,
 						})
 					end,
-					--[[
-                    ['tsserver'] = function()
-                        lspconfig.tsserver.setup({
-                            capabilities = lsp_capabilities,
-                            settings = {
-                                completions = {
-                                    completeFunctionCalls = true
-                                }
-                            }
-                        })
-                    end
-                    --]]
+					["rust_analyzer"] = function() end,
 				},
 			})
 		end,
