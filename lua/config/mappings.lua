@@ -24,3 +24,6 @@ vim.keymap.set("i", "jj", "<Esc>", { desc = "Go to normal mode" })
 vim.keymap.set("n", "<leader>y", '"+y', { desc = "Yank selected to system clipboard" })
 vim.keymap.set("v", "<leader>y", '"+y', { desc = "Yank selected to system clipboard " })
 vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Yand line to system clipboard" })
+
+-- Diagnostics
+vim.keymap.set("n", "<leader>pf", vim.diagnostic.open_float, { desc = "Error Signature In Floating Window" })
