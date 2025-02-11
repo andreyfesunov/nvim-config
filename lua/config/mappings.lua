@@ -21,9 +21,11 @@ vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save" })
 vim.keymap.set("i", "jj", "<Esc>", { desc = "Go to normal mode" })
 
 -- Copy to system clipboard
-vim.keymap.set("n", "<leader>y", '"+y', { desc = "Yank selected to system clipboard" })
-vim.keymap.set("v", "<leader>y", '"+y', { desc = "Yank selected to system clipboard " })
-vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Yand line to system clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>YY", '"+y', { desc = "Yank selected to PRIMARY" })
+vim.keymap.set({ "n", "v" }, "<leader>PP", '"+p', { desc = "Paste selected to PRIMARY" })
+vim.keymap.set({ "n", "v" }, "<leader>Yy", '"*y', { desc = "Yank selected to CLIPBOARD" })
+vim.keymap.set({ "n", "v" }, "<leader>Pp", '"*p', { desc = "Paste selected to CLIPBOARD" })
+-- vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Yand line to system clipboard" })
 
 -- Diagnostics
 vim.keymap.set("n", "<leader>pf", vim.diagnostic.open_float, { desc = "Error Signature In Floating Window" })

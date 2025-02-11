@@ -1,1 +1,1 @@
-map! <S-Insert> <C-R>+
+" Settings for Neovim GUI - NEOVIDE
