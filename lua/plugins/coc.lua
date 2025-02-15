@@ -166,14 +166,15 @@ M.config = function()
 	-- Show all diagnostics
 	keyset(
 		"n",
-		"<space>lD",
+		"<leader>lD",
 		":<C-u>CocList diagnostics<cr>",
 		vim.tbl_deep_extend("keep", opts, { desc = "Diagnostics" })
 	)
 	-- Find symbol of current document
-	keyset("n", "<space>lo", ":<C-u>CocList outline<cr>", vim.tbl_deep_extend("keep", opts, { desc = "Outline" }))
+	keyset("n", "<leader>lo", ":<C-u>CocList outline<cr>", vim.tbl_deep_extend("keep", opts, { desc = "Outline" }))
 	-- Search workspace symbols
-	keyset("n", "<space>ls", ":<C-u>CocList -I symbols<cr>", vim.tbl_deep_extend("keep", opts, { desc = "Symbols" }))
+	keyset("n", "<leader>ls", ":<C-u>CocList -I symbols<cr>", vim.tbl_deep_extend("keep", opts, { desc = "Symbols" }))
+    keyset("n", "<leader>lh", ":lua vim.lsp.buf.hover()<CR>", vim.tbl_deep_extend("keep", opts, { desc = "Hover" }))
 end
 
 return M
