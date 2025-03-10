@@ -6,6 +6,7 @@
   "csvlens.nvim": { "branch": "main", "commit": "987375e2cf6399850f7f801b53b89c981ed652fa" },
   "dressing.nvim": { "branch": "master", "commit": "3a45525bb182730fe462325c99395529308f431e" },
   "fidget.nvim": { "branch": "main", "commit": "a0abbf18084b77d28bc70e24752e4f4fd54aea17" },
+  "flutter-tools.nvim": { "branch": "main", "commit": "70430c32d176f4a15c6e2c80586cd2791e3a664e" },
   "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
   "gitsigns.nvim": { "branch": "main", "commit": "abcd00a7d5bc1a9470cb21b023c575acade3e4db" },
   "harpoon": { "branch": "harpoon2", "commit": "a84ab829eaf3678b586609888ef52f7779102263" },
