@@ -8,7 +8,7 @@ return {
     config = function()
         require("flutter-tools").setup({
             lsp = {
-                cmd = { "dart", "language-server", "--protocol=lsp" },
+                cmd = { "fvm", "dart", "language-server", "--protocol=lsp" },
             },
         })
     end,
